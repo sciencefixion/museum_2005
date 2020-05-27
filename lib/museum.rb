@@ -20,4 +20,5 @@ class Museum
     end
     recommended
   end
+
 end
