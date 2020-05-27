@@ -12,7 +12,6 @@ class PatronTest < Minitest::Test
   end
 
   def test_it_can_read_attributes
-    skip
     patron_1 = Patron.new("Bob", 20)
 
     assert_equal "Bob", patron_1.name
