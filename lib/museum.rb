@@ -26,4 +26,12 @@ class Museum
   def admit(patron)
     @patrons << patron
   end
+
+  def patrons_by_exhibit_intreset
+    # in progress
+    exhibits.reduce({}) do |acc, exhibit|
+      acc[exhibit] = patrons.interests
+      acc
+    end
+  end
 end
