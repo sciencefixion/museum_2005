@@ -11,7 +11,6 @@ class ExhibitTest < Minitest::Test
   end
 
   def test_it_can_read_attributes
-    skip
     exhibit = Exhibit.new({name: "Gems and Minerals", cost: 0})
 
     assert_equal "Gems and Minerals", exhibit.name
